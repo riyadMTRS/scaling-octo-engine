@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riyad Hossain | MTRS AI Agents T</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@chatscope/chat-ui-kit-styles/dist/default/styles.min.css"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@chatscope/chat-ui-kit-react@4.1.0/dist/index.umd.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #000000, #020d1f);
+      color: #00ffe0;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 20px #00ffe0;
+    }
+    .orb {
+      width: 300px;
+      height: 300px;
+      margin: 0 auto 40px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      color: #ffffff;
+      text-shadow: 0 0 10px #00ffe0;
+    }
+    .card {
+      background: rgba(0, 255, 224, 0.08);
+      border: 1px solid #00ffe0;
+      border-radius: 20px;
+      padding: 20px;
+      margin: 20px 0;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0, 255, 224, 0.3);
+    }
+    canvas {
+      display: block;
+      margin: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 0.8rem;
+      color: #999;
+    }
+    .newsletter {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(0, 255, 224, 0.05);
+      border-top: 1px solid #00ffe0;
+    }
+    .newsletter h3 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    .newsletter input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      max-width: 80%;
+      border: none;
+      border-radius: 10px;
+      margin-right: 10px;
+    }
+    .newsletter button {
+      padding: 10px 20px;
+      background: #00ffe0;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .chatbot-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+    #chatbot-frame {
+      width: 100%;
+      max-width: 600px;
+      height: 500px;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 224, 0.2);
+    }
+    .resources-list li {
+      margin: 10px 0;
+    }
+    .resources-list a {
+      color: #00ffe0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .resources-list a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="orb">
+      <canvas id="orbCanvas"></canvas>
+    </div>
+    <h1>Welcome to the Future of Intelligence</h1>
+    <p>Riyad Hossain | Founder of MTRS AI Agents T</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I'm Riyad Hossain — an AI innovator, builder, and visionary on a mission to redefine how humans and machines collaborate. Over the past few months, I've been deeply immersed in building intelligent systems that not only automate tasks but think, evolve, and adapt to real-world marketing challenges.</p>
+      <p>My passion for AI isn't just about coding—it’s about creating living systems that understand us, work with us, and help us shape the future.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What We’re Building: MTRS AI Agents T</h2>
+    <div class="card">
+      <p>MTRS AI Agents T is more than just a project—it's a revolution in how marketing is done. We’ve developed a next-generation AI Marketing Agent designed to:</p>
+      <ul>
+        <li>Automate multi-platform ad placement across Meta, Google, TikTok, and more.</li>
+        <li>Strategically hire influencers, celebrities, and freelancers using intelligent logic.</li>
+        <li>Manage physical and digital marketing campaigns seamlessly.</li>
+        <li>Create AI-generated podcasts, content, and creative assets.</li>
+        <li>Make strategic decisions based on data, embeddings, and live feedback loops.</li>
+      </ul>
+      <p>All built and managed by AI—fully autonomous, endlessly scalable.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Our Journey</h2>
+    <div class="card">
+      <p>From simple ideas to complex systems, our journey has been about pushing boundaries. We’ve built from scratch:</p>
+      <ul>
+        <li>A modular AI marketing agent powered by real-time embeddings.</li>
+        <li>A SQLite-backed knowledge system that learns from campaigns.</li>
+        <li>An eternal chat system—designed to preserve conversations, memory, and continuity.</li>
+        <li>An interactive AI interface that acts as your strategist, partner, and manager.</li>
+      </ul>
+      <p>And we’re just getting started.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The Vision</h2>
+    <div class="card">
+      <p>Imagine an AI that remembers every conversation, every decision, and every lesson learned—an AI that works alongside you like a partner. This is what we’ve been working toward: AI that’s not just smart, but aware, adaptable, and eternal.</p>
+      <p>MTRS AI Agents T is built to evolve—learning from every interaction, optimizing every campaign, and building a marketing empire with intelligence at its core.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Join the Movement</h2>
+    <div class="card">
+      <p>We believe the future is built by those who dare to dream big—and execute even bigger. If you're passionate about AI, marketing, automation, or just want to see what the future looks like...</p>
+      <p>You’re in the right place.</p>
+      <p><strong>Welcome to the movement. Welcome to MTRS AI Agents T.</strong></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>My Resources</h2>
+    <div class="card">
+      <p>These are the free AI tools I personally use to build every project featured on this site:</p>
+      <ul class="resources-list">
+        <li><a href="https://chat.openai.com" target="_blank">ChatGPT</a>: Brainstorming, writing, coding, UI planning, and decision-making.</li>
+        <li><a href="https://app.leonardo.ai" target="_blank">Leonardo.Ai</a>: Image generation, AI concept visuals, and creative design.</li>
+        <li><a href="https://runwayml.com" target="_blank">RunwayML</a>: AI-powered video generation, editing, and effects.</li>
+        <li><a href="https://replit.com" target="_blank">Replit</a>: App hosting, live previews, and full-stack development playground.</li>
+        <li><a href="https://vercel.com" target="_blank">Vercel</a>: Professional hosting for frontend projects.</li>
+        <li><a href="https://canva.com" target="_blank">Canva</a>: Presentation decks, branding visuals, and mockups.</li>
+      </ul>
+      <p>These tools helped bring MTRS AI Agents T to life—and they’re 100% free to use. Whether you're a beginner or expert, these resources can power your next big idea.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Chat With Me</h2>
+    <div class="card chatbot-container">
+      <iframe id="chatbot-frame" src="https://mtrsai-chatbot.replit.app" title="Chat with Riyad Hossain AI"></iframe>
+    </div>
+  </section>
+
+  <div class="newsletter">
+    <h3>Subscribe to get updates on my latest AI projects:</h3>
+    <form action="#" method="post">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Riyad Hossain • MTRS AI Agents T
+  </footer>
+
+  <!-- GSAP Animation Placeholder -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- Three.js 3D Orb Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('orbCanvas'), alpha: true });
+    renderer.setSize(300, 300);
+
+    const geometry = new THREE.IcosahedronGeometry(1, 1);
+    const material = new THREE.MeshStandardMaterial({ color: 0x00ffe0, wireframe: true });
+    const orb = new THREE.Mesh(geometry, material);
+    scene.add(orb);
+
+    const light = new THREE.PointLight(0xffffff, 1, 100);
+    light.position.set(5, 5, 5);
+    scene.add(light);
+
+    camera.position.z = 3;
+
+    function animate() {
+      requestAnimationFrame(animate);
+      orb.rotation.x += 0.005;
+      orb.rotation.y += 0.01;
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script>
+</body>
+</html>
